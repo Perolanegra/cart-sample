@@ -1,0 +1,80 @@
+.global {
+    display: flex;
+    justify-content: flex-start;
+    padding: 60px 75px;
+}
+
+.alignment-links {
+    display: flex;
+    padding: 6rem 0 2rem;
+}
+
+.alignment-btns {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 8.2rem;
+}
+
+.btn-large {
+    border: none;
+    height: 55px;
+    border-radius: 0px;
+}
+
+.btn-discount {
+    background: #fbb710;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.btn-discount:hover {
+    background: #131212;
+    transition: all 500ms;
+}
+
+
+.btn-new:hover {
+    background: #afafaf;
+    color: #131212;
+    transition: all 500ms;
+}
+
+.btn-new {
+    background: #131212;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.menu-below {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+}
+
+.menu-below-inside {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.material-icons {
+    padding-right: 7px;
+    cursor: pointer;
+
+}
+
+.btn-below {
+    cursor: pointer;
+}
+
+.btn-below:hover {
+    color: #fbb710;
+    transition: all 500ms;
+}
+
