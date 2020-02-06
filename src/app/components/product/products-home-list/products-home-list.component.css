@@ -26,3 +26,18 @@
     background-color: rgba(60, 60, 60, 0.7);
 }
 
+.card-layout {
+    display: flex;
+    height: fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.img-layout {
+    max-height: 400px !important;
+    max-width: fit-content;
+}
+
+.img-outer {
+    cursor: pointer;
+}

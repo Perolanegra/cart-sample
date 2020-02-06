@@ -1,4 +1,4 @@
-import { MatButtonModule, MatCheckboxModule, MAT_DATE_FORMATS, DateAdapter, MatDrawer, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MAT_DATE_FORMATS, DateAdapter, MatDrawer, MatCardModule, MatGridListModule } from '@angular/material';
 import { NgModule } from "@angular/core";
 import { MatTableModule, MatInputModule, MAT_DIALOG_DATA, MatToolbarModule } from '@angular/material';
 import { MatDialogRef, MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
@@ -30,9 +30,10 @@ export const MY_FORMATS = {
     CommonModule,
     MatButtonModule,
     MatCardModule,
+    MatGridListModule,
     // MatCheckboxModule,
     // MatTableModule,
-    // MatInputModule,
+    MatInputModule,
     // MatDialogModule,
     // MatToolbarModule,
     MatSidenavModule,
@@ -54,9 +55,10 @@ export const MY_FORMATS = {
     CommonModule,
     MatButtonModule,
     MatCardModule,
+    MatGridListModule,
     // MatCheckboxModule,
     // MatTableModule,
-    // MatInputModule,
+    MatInputModule,
     // MatDialogModule,
     // MatToolbarModule,
     MatSidenavModule,

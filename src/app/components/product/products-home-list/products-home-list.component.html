@@ -1,12 +1,9 @@
-<div class="column">
+<div class="row">
 
-  <div class="form-row">
-
-    <div class="col-4" *ngFor="let item of products">
-      <mat-card class="card-layout">
-
-        <div>
-          <img mat-card-image [src]='path + item?.img'>
+    <div class="card-layout col-4" *ngFor="let item of products">
+      <mat-card>
+        <div class="img-outer" (click)="openDetails(item?._id)">
+          <img mat-card-image class="img-layout" [src]='path + item?.img'>
           <div class="hover-content">
             <div class="line"></div>
             <p> From ${{ item?.price }}</p>
@@ -25,9 +22,5 @@
         </mat-card-actions>
       </mat-card>
     </div>
-
-
-
-  </div>
 
 </div>

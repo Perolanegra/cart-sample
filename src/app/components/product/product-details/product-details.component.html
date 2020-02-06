@@ -1,0 +1,47 @@
+<div class="column scope">
+
+
+
+  <div class="row">
+
+    <div class="col-6">
+      <img [src]='getProduct() | productImg'>
+    </div>
+
+    <div class="col-6">
+      <p class="price-tag"> ${{ getProduct() | productPrice }} </p>
+      <h6 class="product-name"> {{ getProduct() | productName }} </h6>
+      
+      <div class="ratings stars-container">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+
+      <p><i class="fa fa-circle availability"></i> In Stock</p>
+
+      <br>
+      <br>
+
+      <p class="product-descript"> {{ getProduct() | productDescript }} </p>
+
+      <mat-form-field class="example-full-width">
+        <input matInput type="number" placeholder="Quantity" required [value]="qtd" min="1" max="10">
+      </mat-form-field>
+
+      <div>
+        <button type="button" class="btn-extra-large btn-add active">Add to cart</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <mat-action-list>
+    <button mat-list-item (click)="save()"> Save </button>
+    <button mat-list-item (click)="undo()"> Undo </button>
+  </mat-action-list> -->
+
+</div>
