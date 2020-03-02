@@ -1,6 +1,6 @@
 <div class="row">
 
-    <div class="card-layout col-4" *ngFor="let item of products">
+    <div class="card-layout col-xs-4" *ngFor="let item of products">
       <mat-card>
         <div class="img-outer" (click)="openDetails(item?._id)">
           <img mat-card-image class="img-layout" [src]='path + item?.img'>

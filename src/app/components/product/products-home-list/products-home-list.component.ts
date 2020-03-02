@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Router, NavigationExtras } from '@angular/router';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-products-home-list',
@@ -26,5 +27,6 @@ export class ProductsHomeListComponent implements OnInit {
   public get products() {
     return JSON.parse(localStorage.getItem('products'));
   }
+
 
 }
